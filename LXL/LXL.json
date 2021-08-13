@@ -1,0 +1,18 @@
+{
+    "notice":[],
+    "1.17.10":
+    {
+        "Version":"0.4.4",
+        "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.10/",
+        "Files":[
+            {
+                "Name":"LiteXLoader.Js.dll",
+                "Install":"plugins"
+            },
+            {
+                "Name":"LiteXLoader.Lua.dll",
+                "Install":"plugins"
+            }
+        ]
+    },
+}
