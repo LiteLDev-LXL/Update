@@ -33,9 +33,10 @@ bool MD5Updated = false;
 
 void UpdateMD5(const string& path)
 {
+    string md5Path = path + ".md5";
     string md5, newMd5 = CalcMD5(path);
 
-    ifstream md5in(path + ".md5");
+    ifstream md5in(md5Path);
     if (md5in)
     {
         getline(md5in, md5);
@@ -53,7 +54,7 @@ void UpdateMD5(const string& path)
     MD5Updated = true;
     cout << "Update MD5 for " << path << endl;
 
-    ofstream md5out(path + ".md5");
+    ofstream md5out(md5Path);
     md5out << newMd5;
     md5out.close();
 }
@@ -125,7 +126,7 @@ int main()
     if (MD5Updated)
     {
         cout << "Finish updating. Pushing back to GitHub..." << endl;
-        system("git push origin");
+        //system("git push origin");
     }
     else
     {
