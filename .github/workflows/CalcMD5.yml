@@ -17,5 +17,5 @@ jobs:
       run: ./AutoCalcMD5.exe
       shell: bash
 
-    - name: Add & Commit Change
-      - uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Add & Commit
+      uses: stefanzweifel/git-auto-commit-action@v4
