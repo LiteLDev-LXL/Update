@@ -16,3 +16,6 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: ./AutoCalcMD5.exe
       shell: bash
+    
+    - name: action-push
+      uses: ludeeus/action-push
