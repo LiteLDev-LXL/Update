@@ -23,3 +23,10 @@ https://cdn.jsdelivr.net/gh/LiteLDev-LXL/Update/Test/version.json | 使用Jsdeli
 -|-|-
 无缓存 | /Test/*.json | 所有在文件夹下一级目录的Json文件不会缓存
 无缓存 | /Test/nocache/* | 在文件夹的nocache目录下的所有文件不会缓存
+
+## Auto Calculate MD5 Hash
+
+- 此仓库拥有自动MD5计算 actions，在每次push时触发，扫描所有更改文件并重新计算其MD5值上传到仓库，方便自动更新时作下载校验之用
+- MD5将被储存到文件名.md5的文本文件中，储存于原文件的同一目录中，下载时带上此文件一起下载并校验即可
+- 默认情况下，MD5计算会跳过所有的json文件
+- 如果你有目录需要被排除，请按同样的格式将目录路径写入到根目录IgnoreDirs.conf即可，一行一个目录路径，并push到仓库中
