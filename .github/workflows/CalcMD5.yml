@@ -16,6 +16,38 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: ./AutoCalcMD5.exe
       shell: bash
+
+    - name: Add & Commit
+      # You may pin to the exact commit or the version.
+      # uses: EndBug/add-and-commit@2bdc0a61a03738a1d1bda24d566ad0dbe3083d87
+      uses: EndBug/add-and-commit@v7.2.1
+      with:
+        # Arguments for the git add command
+        add: # optional, default is .
+        # The name of the user that will be displayed as the author of the commit
+        author_name: # optional
+        # The email of the user that will be displayed as the author of the commit
+        author_email: # optional
+        # Name of the branch to use, if different from the one that triggered the workflow
+        branch: # optional
+        # The directory where your repository is located. You should use actions/checkout first to set it up
+        cwd: # optional, default is .
+        # How the action should fill missing author name or email.
+        default_author: # optional, default is github_actor
+        # The message for the commit
+        message: # optional
+        # The flag used on the pull strategy. Use NO-PULL to avoid the action pulling at all.
+        pull_strategy: # optional, default is --no-rebase
+        # Whether to push the commit and, if any, its tags to the repo. It can also be used to set the git push arguments (more info in the README)
+        push: # optional, default is true
+        # Arguments for the git rm command
+        remove: # optional
+        # Whether to use the --signoff option on git commit
+        signoff: # optional
+        # Arguments for the git tag command (the tag name always needs to be the first word not preceded by a hyphen)
+        tag: # optional
+        # The token used to make requests to the GitHub API. It's NOT used to make commits and should not be changed.
+        github_token: # optional, default is ${{ github.token }}
     
     - name: GitHub Push
       uses: ad-m/github-push-action@v0.6.0
