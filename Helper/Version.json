@@ -1,6 +1,5 @@
 {
-	"version":"0.0.1",
-	"notice":"支持",
-	"downloadFile":"xxxtest",
-	"more":"ssssss"
+  "version":0.4,
+  "download":"https://cdn.jsdelivr.net/gh/LiteLDev-LXL/LXLDevHelper-Library/Library.zip",
+  "notice":"测试，确定更新吗?"
 }
