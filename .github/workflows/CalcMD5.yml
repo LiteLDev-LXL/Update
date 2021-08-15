@@ -16,6 +16,12 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: ./AutoCalcMD5.exe
       shell: bash
+      
+    - name: Download LXLDevHelperFile
+      uses: carlosperate/download-file-action@v1.0.3
+      with:
+       file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-Library/raw/master/Library.zip"
+       file-name: "Helper/Files/Library.zip"
 
     - name: Add & Commit
       uses: stefanzweifel/git-auto-commit-action@v4
