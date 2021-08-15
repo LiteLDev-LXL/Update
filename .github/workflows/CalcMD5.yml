@@ -12,12 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Download LXLDevHelperFile
-      uses: carlosperate/download-file-action@v1.0.3
-      with:
-       file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-Library/raw/master/Library.zip"
-       file-name: "Helper/Files/Library.zip"
-       
     - name: Calculate MD5
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: ./AutoCalcMD5.exe
