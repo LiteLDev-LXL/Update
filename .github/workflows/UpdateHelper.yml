@@ -15,7 +15,7 @@ jobs:
     - name: Download LXLDevHelperFile
       uses: carlosperate/download-file-action@v1.0.3
       with:
-       file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-Library/raw/master/Library.zip"
+       file-url: "https://github.com/LiteLDev-LXL/LXLDevHelper-DocSrc/raw/main/Builds/Library.zip"
        file-name: "Helper/Files/Library.zip"
 
     - name: Add & Commit
