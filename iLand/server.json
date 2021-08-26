@@ -1,0 +1,25 @@
+{
+    "FILE_Version": 200,
+    "Force_Update": false,
+    "Updates": [
+        {
+            "NumVer": 224,
+            "Version": "2.24",
+            "Description": [],
+            "FileChanged": [],
+            "SHA1": []
+        }
+    ],
+    "Announcement": {
+        "enabled": true,
+        "content": [
+            "QQ交流群：168611598",
+            "Discord：https://discord.gg/fEdM9eRhkH",
+            "文档站 Document：https://myland.amd.rocks/"
+        ]
+    },
+    "Analysis": {
+        "enabled": false,
+        "link": "https://cdisk.amd.rocks/tmp/il_tongji.html?ver={version}&plcount={players}"
+    }
+}
