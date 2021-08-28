@@ -1,8 +1,23 @@
 {
     "notice":[],
+    "1.17.11":
+    {
+        "Version":"0.5.1",
+        "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.11/",
+        "Files":[
+            {
+                "Name":"LiteXLoader.Js.dll",
+                "Install":"plugins"
+            },
+            {
+                "Name":"LiteXLoader.Lua.dll",
+                "Install":"plugins"
+            }
+        ]
+    },
     "1.17.10":
     {
-        "Version":"0.4.5",
+        "Version":"0.5.1",
         "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.10/",
         "Files":[
             {
@@ -15,4 +30,5 @@
             }
         ]
     }
+    
 }
