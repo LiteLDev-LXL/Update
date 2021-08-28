@@ -5,29 +5,18 @@
         {
             "NumVer": 224,
             "Version": "2.30",
-            "Description": ["fxxk u"],
-            "FileChanged": [
-                "$plugin_path::iland-core.lua",
-                "$plugin_path::lib/airLibs.lua",
-                "$data_path::lang/zh_CN.json",
-                "$data_path::lang/zh_TW.json",
-                "$data_path::lang/en_US.json"
-            ],
-            "SHA1": [
-                "none",
-                "none",
-                "none",
-                "none",
-                "none"
-            ]
+            "Description": [],
+            "FileChanged": [],
+            "SHA1": []
         }
     ],
     "Announcement": {
         "enabled": true,
         "content": [
-            "QQ交流群：168611598",
-            "Discord：https://discord.gg/fEdM9eRhkH",
-            "文档站 Document：https://myland.amd.rocks/"
+            "iLand 2.30已发布，包含大量问题修复与功能更新。",
+            "如果您已经更新，请忽略此消息",
+            "iLand 2.30 has been released, including a large number of bug fixes and feature updates.",
+            "If you have already updated, please ignore this message"
         ]
     },
     "Analysis": {
