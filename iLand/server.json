@@ -4,10 +4,22 @@
     "Updates": [
         {
             "NumVer": 224,
-            "Version": "2.24",
-            "Description": [],
-            "FileChanged": [],
-            "SHA1": []
+            "Version": "2.30",
+            "Description": ["fxxk u"],
+            "FileChanged": [
+                "$plugin_path::iland-core.lua",
+                "$plugin_path::lib/airLibs.lua",
+                "$data_path::lang/zh_CN.json",
+                "$data_path::lang/zh_TW.json",
+                "$data_path::lang/en_US.json"
+            ],
+            "SHA1": [
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ]
         }
     ],
     "Announcement": {
