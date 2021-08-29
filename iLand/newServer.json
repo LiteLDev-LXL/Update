@@ -4,18 +4,15 @@
     "DisableClientUpdate": false,
     "Updates": [
         {
-            "NumVer": 233,
-            "Version": "2.33",
-            "Description": [
-                "测试更新"
-            ],
-            "FileChanged": [
-                "$plugin_path::iland-core.lua"
-            ]
+            "NumVer": 231,
+            "Version": "2.31",
+            "Description": [],
+            "FileChanged": [],
+            "SHA1":[]
         }
     ],
     "Announcement": {
-        "enabled": true,
+        "enabled": false,
         "content": [
             "测试公告"
         ]
