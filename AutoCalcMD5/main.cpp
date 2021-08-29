@@ -89,7 +89,7 @@ bool ForEachFile(string strPath)
         else
         {
             auto& filePath = itr.path();
-            if (filePath.extension() != ".json" && filePath.extension() != ".md5")
+            if (filePath.extension() != ".md5")
                 UpdateMD5(path);
         }
     }
