@@ -1,0 +1,23 @@
+{
+    "FILE_Version": 201,
+    "Force_Update": false,
+    "DisableClientUpdate": false,
+    "Updates": [
+        {
+            "NumVer": 230,
+            "Version": "2.30",
+            "Description": [],
+            "FileChanged": []
+        }
+    ],
+    "Announcement": {
+        "enabled": true,
+        "content": [
+            "测试公告"
+        ]
+    },
+    "Analysis": {
+        "enabled": false,
+        "link": "https://cdisk.amd.rocks/tmp/il_tongji.php?ver={version}&plcount={players}"
+    }
+}
