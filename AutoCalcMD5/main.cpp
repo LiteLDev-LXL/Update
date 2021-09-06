@@ -4,27 +4,38 @@
 #include <fstream>
 #include <vector>
 #include <cstdlib>
+#include <optional>
 #include "Hash/md5.h"
 using namespace std;
 
 #define IGNORE_FILES "IgnoreDirs.conf"
-#define CHECK_MD5_READ_BUF 256*1024
 
 vector<string> ignores;
+
+std::optional<std::string> ReadAllFile(const std::string& filePath, bool isBinary)
+{
+    std::ifstream fRead;
+
+    std::ios_base::openmode mode = ios_base::in;
+    if (isBinary)
+        mode |= ios_base::binary;
+
+    fRead.open(filePath, mode);
+    if (!fRead.is_open())
+    {
+        return std::nullopt;
+    }
+    std::string data((std::istreambuf_iterator<char>(fRead)),
+        std::istreambuf_iterator<char>());
+    fRead.close();
+    return data;
+}
 
 string CalcMD5(const string& path)
 {
 	auto calc = Chocobo1::MD5();
-	char buff[CHECK_MD5_READ_BUF] = { 0 };
-
-	FILE* fd;
-	fopen_s(&fd, path.c_str(), "rb");
-	while (!feof(fd))
-	{
-		int count = fread(buff, sizeof(char), CHECK_MD5_READ_BUF, fd);
-		calc.addData(buff, count);
-	}
-	fclose(fd);
+    auto content = ReadAllFile(path, true);
+    calc.addData(content->c_str(), content->size());
 
 	return calc.finalize().toString();
 }
