@@ -12,10 +12,6 @@
             {
                 "Name":"LiteXLoader.Lua.dll",
                 "Install":"plugins"
-            },
-            {
-                "Name":"BaseLib.js",
-                "Install":"plugins/lib"
             }
         ]
     },
@@ -31,10 +27,6 @@
             {
                 "Name":"LiteXLoader.Lua.dll",
                 "Install":"plugins"
-            },
-            {
-                "Name":"BaseLib.js",
-                "Install":"plugins/lib"
             }
         ]
     }
