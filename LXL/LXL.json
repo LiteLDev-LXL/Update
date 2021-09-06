@@ -32,15 +32,18 @@
             }
         ]
     },
-    "UpdateTool":
-    {
-        "Version":"1.0.1",
-        "URL":"https://lxl-upgrade.amd.rocks/LXL/UpdateTool/",
-        "Files":[
-            {
-                "Name":"LXLAutoUpdate.dll",
-                "Install":"plugins/LiteXLoader"
-            }
-        ]
-    }
+    "OtherFiles": [
+        {
+            "Name":"LXLAutoUpdate.dll",
+            "Version":"1.0.1",
+            "URL":"https://lxl-upgrade.amd.rocks/LXL/UpdateTool/",
+            "Install":"plugins/LiteXLoader"
+        },
+        {
+            "Name":"BaseLib.js",
+            "Version":"1.1.0",
+            "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.11/",
+            "Install":"plugins/lib"
+        }
+    ]
 }
