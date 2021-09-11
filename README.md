@@ -1,4 +1,6 @@
 # LXL Public Upgrade Service
+> 推荐使用更为先进的方案：[Cloud](https://github.com/LiteLDev-LXL/Cloud) <br>
+> 本仓库可能随时Archive
 
 ### Intention
 此服务意为节省开发者寻找相关托管服务器的时间或金钱，为插件开发提供更多方便。
