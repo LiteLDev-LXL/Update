@@ -102,5 +102,13 @@
             }
         ]
     },
-    "OtherFiles": []
+    "OtherFiles": [
+        {
+            "Name":"Example",
+            "Version":"0.0.0",
+            "URL":"",
+            "Install":"",
+            "IsBinary":true
+        }
+    ]
 }
