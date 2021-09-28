@@ -1,5 +1,38 @@
 {
     "notice":[],
+    "1.17.31":
+    {
+        "notice":[],
+        "Version":"0.5.6",
+        "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.30/",
+        "Files":[
+            {
+                "Name":"LiteXLoader.Js.dll",
+                "Install":"plugins",
+                "IsBinary":true
+            },
+            {
+                "Name":"LiteXLoader.Lua.dll",
+                "Install":"plugins",
+                "IsBinary":true
+            },
+            {
+                "Name":"LLMoney.dll",
+                "Install":"plugins",
+                "IsBinary":true
+            },
+            {
+                "Name":"BaseLib.js",
+                "Install":"plugins/lib",
+                "IsBinary":false
+            },
+            {
+                "Name":"BaseLib.lua",
+                "Install":"plugins/lib",
+                "IsBinary":false
+            }
+        ]
+    },
     "1.17.30":
     {
         "notice":[],
