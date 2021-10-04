@@ -12,9 +12,14 @@
         }
     ],
     "Announcement": {
-        "enabled": false,
+        "enabled": true,
         "content": [
-            "测试公告"
+            "iLand 2.40已更新，快去更新！！！",
+            "iLand 2.40已更新，快去更新！！！",
+            "iLand 2.40已更新，快去更新！！！",
+            "iLand 2.40 released!!,
+            "iLand 2.40 released!!,
+            "iLand 2.40 released!!
         ]
     },
     "Analysis": {
