@@ -392,4 +392,4 @@ globalThis.file = File;
 DirectionAngle.prototype.valueOf = function()
 {
     return this.toFacing();
-}
+} 
