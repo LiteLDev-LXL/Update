@@ -101,13 +101,13 @@
                 "Name":"BaseLib.js",
                 "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.30/",
                 "Install":"plugins/lib",
-                "IsBinary":false
+                "IsBinary":true
             },
             {
                 "Name":"BaseLib.lua",
                 "URL":"https://lxl-upgrade.amd.rocks/LXL/1.17.30/",
                 "Install":"plugins/lib",
-                "IsBinary":false
+                "IsBinary":true
             }
         ]
     },
