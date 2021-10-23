@@ -5,7 +5,7 @@
 #include <vector>
 #include <cstdlib>
 #include <optional>
-#include "Hash/md5.h"
+#include "openssl/md5.h"
 using namespace std;
 
 #define IGNORE_FILES "IgnoreDirs.conf"
@@ -33,11 +33,18 @@ std::optional<std::string> ReadAllFile(const std::string& filePath, bool isBinar
 
 string CalcMD5(const string& path)
 {
-	auto calc = Chocobo1::MD5();
     auto content = ReadAllFile(path, true);
-    calc.addData(content->c_str(), content->size());
 
-	return calc.finalize().toString();
+    unsigned char md5[MD5_DIGEST_LENGTH];
+    const char map[] = "0123456789abcdef";
+    string hexmd5;
+
+    MD5((const unsigned char*)content->c_str(), content->length(), md5);
+    for (size_t i = 0; i < MD5_DIGEST_LENGTH; ++i) {
+        hexmd5 += map[md5[i] / 16];
+        hexmd5 += map[md5[i] % 16];
+    }
+    return hexmd5;
 }
 
 bool MD5Updated = false;
